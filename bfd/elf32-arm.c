@@ -13677,6 +13677,7 @@ elf32_arm_fix_exidx_coverage (asection **text_section_order,
 	  else
 	    unwind_type = 2;
 
+	  elide = 0;
 	  if (elide && !bfd_link_relocatable (info))
 	    {
 	      add_unwind_table_edit (&unwind_edit_head, &unwind_edit_tail,
