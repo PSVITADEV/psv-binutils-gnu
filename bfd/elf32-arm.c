@@ -13584,6 +13584,7 @@ elf32_arm_fix_exidx_coverage (asection **text_section_order,
 	  else
 	    unwind_type = 2;
 
+	  elide = 0;
 	  if (elide && !bfd_link_relocatable (info))
 	    {
 	      add_unwind_table_edit (&unwind_edit_head, &unwind_edit_tail,
@@ -20449,7 +20450,7 @@ elf32_arm_merge_private_bfd_data (bfd *ibfd, struct bfd_link_info *info)
 	 example.  */
       if (in_flags == 0)
 	return true;
-      
+
       elf_flags_init (obfd) = true;
       elf_elfheader (obfd)->e_flags = in_flags;
 
