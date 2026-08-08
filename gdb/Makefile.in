@@ -802,6 +802,7 @@ ALL_TARGET_OBS = \
 	arm-obsd-tdep.o \
 	arm-pikeos-tdep.o \
 	arm-tdep.o \
+	arm-psv-tdep.o \
 	arm-wince-tdep.o \
 	avr-tdep.o \
 	bfin-linux-tdep.o \

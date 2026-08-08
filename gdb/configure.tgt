@@ -221,6 +221,10 @@ arm*-*-openbsd*)
 	# Target: OpenBSD/arm
 	gdb_target_obs="arm-bsd-tdep.o arm-obsd-tdep.o"
 	;;
+arm*-psv-eabi | arm*-vita-eabi)
+	# Target: PS Vita
+	gdb_target_obs="arm-psv-tdep.o"
+	;;
 arm*-*-*)
 	# Target: ARM embedded system
 	gdb_target_obs="arm-pikeos-tdep.o"
