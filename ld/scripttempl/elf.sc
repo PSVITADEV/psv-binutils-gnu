@@ -764,6 +764,9 @@ cat <<EOF
   ${CREATE_SHLIB-${CREATE_PIE-${RELOCATING+. = ${DATA_ADDR-${DATA_SEGMENT_ALIGN}};}}}
   ${CREATE_SHLIB+. = ${SHLIB_DATA_ADDR-${DATA_SEGMENT_ALIGN}};}
   ${CREATE_PIE+. = ${SHLIB_DATA_ADDR-${DATA_SEGMENT_ALIGN}};}
+
+  /* Hacky hackity hack. Need this because otherwise data segment is not aligned enough. */
+  . = ALIGN(0x10000);
 EOF
 }
 
