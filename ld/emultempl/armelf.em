@@ -41,7 +41,7 @@ static struct elf32_arm_params params =
   BFD_ARM_STM32L4XX_FIX_NONE,	/* stm32l4xx_fix */
   0,				/* no_enum_size_warning */
   0,				/* no_wchar_size_warning */
-  0,				/* pic_veneer */
+  1,				/* pic_veneer */
   -1,				/* fix_cortex_a8 */
   1,				/* fix_arm1176 */
   -1,				/* merge_exidx_entries */
