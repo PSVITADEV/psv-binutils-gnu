@@ -422,7 +422,7 @@ gdb_os_evprintf_filtered (host_callback * p, const char *format, va_list ap)
 
 /* GDB version of error callback.  */
 
-static void ATTRIBUTE_PRINTF (2, 3)
+static void  ATTRIBUTE_NORETURN ATTRIBUTE_PRINTF (2, 3)
 gdb_os_error (host_callback * p, const char *format, ...)
 {
   va_list args;

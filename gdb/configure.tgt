@@ -212,6 +212,10 @@ arm*-*-openbsd*)
 	# Target: OpenBSD/arm
 	gdb_target_obs="arm-bsd-tdep.o arm-obsd-tdep.o"
 	;;
+arm*-psv-eabi | arm*-vita-eabi)
+	# Target: PS Vita
+	gdb_target_obs="arm-vita-tdep.o"
+	;;
 arm*-*-*)
 	# Target: ARM embedded system
 	gdb_target_obs="arm-pikeos-tdep.o"
@@ -360,8 +364,8 @@ iq2000-*-*)
 	gdb_target_obs="iq2000-tdep.o"
 	;;
 
-lm32-*-*)		
-	gdb_target_obs="lm32-tdep.o" 
+lm32-*-*)
+	gdb_target_obs="lm32-tdep.o"
 	;;
 
 loongarch*-*-linux*)
@@ -664,7 +668,7 @@ tic6x-*-*linux)
 	;;
 
 tic6x-*-*)
-	# Target: TI C6X 
+	# Target: TI C6X
 	gdb_target_obs="tic6x-tdep.o"
 	;;
 

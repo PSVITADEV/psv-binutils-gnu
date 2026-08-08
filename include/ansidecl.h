@@ -119,7 +119,7 @@ So instead we use the macro below and test it against specific values.  */
 #endif /* !__cplusplus || GNUC >= 3.4 */
 
 #ifndef ATTRIBUTE_NORETURN
-#define ATTRIBUTE_NORETURN __attribute__ ((__noreturn__))
+#define ATTRIBUTE_NORETURN
 #endif /* ATTRIBUTE_NORETURN */
 
 /* Attribute `nonnull' was valid as of gcc 3.3.  */
